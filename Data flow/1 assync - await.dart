@@ -13,8 +13,8 @@ void main() {
    * As you might infer, "async" also can be put in "main" function 
    */
   final rqget = (url) async {
-    final String value = await httpGet(url);
     try {
+      final String value = await httpGet(url);
       print(value);
     } catch (err) {
       print("Error:\n$err");
